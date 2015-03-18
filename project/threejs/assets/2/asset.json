@@ -1,0 +1,125 @@
+{
+  "nodes": [
+    {
+      "name": "Camera",
+      "children": [],
+      "components": [
+        {
+          "type": "Camera",
+          "config": {
+            "mode": "orthographic",
+            "fov": 45,
+            "orthographicScale": 10,
+            "viewport": {
+              "x": 0,
+              "y": 0,
+              "width": 1,
+              "height": 1
+            }
+          },
+          "id": 0
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": 7,
+        "z": 10
+      },
+      "orientation": {
+        "x": -0.21643961393810288,
+        "y": 0,
+        "z": 0,
+        "w": 0.9762960071199334
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "id": 1
+    },
+    {
+      "name": "Sprite",
+      "children": [],
+      "components": [
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "spriteAssetId": 1,
+            "animationId": null
+          },
+          "id": 0
+        }
+      ],
+      "position": {
+        "x": -3,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": -0.21643961393810288,
+        "y": 0,
+        "z": 0,
+        "w": 0.9762960071199334
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "id": 2
+    },
+    {
+      "name": "Wireframe Cube",
+      "children": [],
+      "components": [
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "MyBehavior"
+          },
+          "id": 1
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "id": 0
+    },
+    {
+      "name": "Textured Cube",
+      "children": [],
+      "components": [],
+      "position": {
+        "x": 3,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "id": 0,
+    "name": "Script",
+    "type": "script"
+  },
+  {
+    "id": 1,
+    "name": "Sup Logo",
+    "type": "sprite"
+  },
+  {
+    "id": 2,
+    "name": "Scene",
+    "type": "scene"
+  }
+]
