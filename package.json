@@ -7,10 +7,13 @@
     "url": "https://github.com/florentpoujol/superpowers-threejs-plugin"
   },
   "author": "Florent Poujol <florent.poujol@gmail.com> (http://florentpoujol.fr)",
+  "devDependencies": {},
   "dependencies": {},
   "keywords": [
-    "superpowers", "plugin",
-    "three", "threejs",
+    "superpowers",
+    "plugin",
+    "three",
+    "threejs",
     "webgl"
   ],
   "bugs": {
@@ -19,10 +22,8 @@
   "scripts": {
     "compilets": "tsc api/text.ts --out gitignore/text.js --module commonjs --target ES5",
     "gendoc": "typedoc --out docs/ api/text.ts --mode file --target ES5 --name \"Text asset\" --readme readme.md --verbose",
-
     "linksrcdev": "mklink /j \"../../app/plugins/florentpoujol/threejs\" \"./\"",
     "linksrcrelease": "mklink /j \"../../../release/app/plugins/florentpoujol/threejs\" \"./\"",
-
     "linkprojdev": "mklink /j \"../../app/projects/threejs\" \"./project/threejs\"",
     "linkprojrelease": "mklink /j \"../../../localprojects/threejs\" \"./project/threejs\""
   },
@@ -30,6 +31,5 @@
     "Florent Poujol <florent.poujol@gmail.com>"
   ],
   "homepage": "https://github.com/florentpoujol/superpowers-threejs-plugin",
-  "devDependencies": {},
   "license": "MIT"
 }
