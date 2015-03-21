@@ -41,7 +41,7 @@ class MyBehavior extends Sup.Behavior {
     sphere.position.set(0, 3, 0);
     
     SupThreeScene.add( sphere );
-    SupThreeScene.updateMatrixWorld();
+    SupThreeScene.updateMatrixWorld(true);
     
   }
 }
