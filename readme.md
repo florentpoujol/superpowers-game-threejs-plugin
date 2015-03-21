@@ -2,6 +2,8 @@
 
 This plugin for [Superpowers, the extensible HTML5 2D+3D game engine](http://sparklinlabs.com), exposes THREE.js (r70) directly to the runtime.  
 
+# Usage
+
 Typically, runtime objects have an `__inner` property set to their conterpart instance on the engine side which will reference the THREE objects they works with (`texture` for a Sprite asset, `threeMesh` for a SpriteRenderer, ...).  
 
 The `__inner` property is likely not exposed, so you have to store the objects in a temp variable of type `any` to access it.
@@ -62,6 +64,8 @@ For instance, the following code creates the two cubes and the sphere you can se
 
 ## Installation
 
+This plugin depends on [the DOM plugin](https://github.com/florentpoujol/superpowers-dom-plugin), __so you need to install it too__.
+
 [Download the latest release](https://github.com/florentpoujol/superpowers-threejs-plugin/releases) then unzip it.
 
 Rename the folder if you want then move it inside `app/plugins/florentpoujol/`.
@@ -75,6 +79,8 @@ The plugin is published as an npm package so you can get any version of it via `
     npm install sup-threejs-plugin
 
 Note that the name of the vendors in the `app/plugins/` folder actually don't matter, it can be `node_modules`.
+
+The DOM plugin will be installed as any dependency in `sup-threejs-plugin/node_modules/sup-dom-plugin`, so you just need to move it two folders up.
 
 ## Test/Demo project
 
