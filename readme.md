@@ -57,7 +57,7 @@ For instance, the following code creates the two cubes and the sphere you can se
         sphere.position.set(0, 3, 0);
         
         SupThreeScene.add( sphere );
-        SupThreeScene.updateMatrixWorld();
+        SupThreeScene.updateMatrixWorld(true);
       }
     }
 
