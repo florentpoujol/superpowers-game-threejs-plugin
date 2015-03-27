@@ -1,1 +1,1 @@
-SupRuntime.addPlugin "threejs", require "./threejs"
+SupRuntime.registerPlugin "threejs", require "./threejs"
