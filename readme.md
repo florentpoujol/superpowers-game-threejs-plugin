@@ -66,19 +66,16 @@ For instance, the following code creates the two cubes and the sphere you can se
 
 This plugin depends on [the DOM plugin](https://github.com/florentpoujol/superpowers-dom-plugin), __so you need to install it too__.
 
-[Download the latest release](https://github.com/florentpoujol/superpowers-threejs-plugin/releases) then unzip it.
-
-Rename the folder if you want then move it inside `app/plugins/florentpoujol/`.
-
-Finally restart your server.
+[Download the latest release](https://github.com/florentpoujol/superpowers-threejs-plugin/releases), unzip it, rename the folder to `threejs`, move it inside `app/plugins/florentpoujol/` then restart your server.
 
 __Advanced:__
 
-The plugin is published as an npm package so you can get any version of it via `npm`:
+Get it via `npm`:
 
     npm install sup-threejs-plugin
 
-Note that the name of the vendors in the `app/plugins/` folder actually don't matter, it can be `node_modules`.
+The name of the vendors or plugins in the `app/plugins/` folder don't matter.  
+So you can leave the plugin path as `node_modules/sup-threejs-plugin`.
 
 The DOM plugin will be installed as any dependency in `sup-threejs-plugin/node_modules/sup-dom-plugin`, so you just need to move it two folders up.
 
