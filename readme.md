@@ -2,6 +2,23 @@
 
 This plugin for [Superpowers, the extensible HTML5 2D+3D game engine](http://sparklinlabs.com), exposes THREE.js (r70) directly to the runtime.  
 
+## Installation
+
+This plugin depends on [the DOM plugin](https://github.com/florentpoujol/superpowers-dom-plugin), __so you need to install it too__.
+
+[Download the latest release](https://github.com/florentpoujol/superpowers-threejs-plugin/releases), unzip it, rename the folder to `threejs`, move it inside `app/plugins/florentpoujol/` then restart your server.
+
+__Advanced:__
+
+Get it via `npm`:
+
+    npm install sup-threejs-plugin
+
+The name of the vendors or plugins in the `app/plugins/` folder don't matter.  
+So you can leave the plugin path as `node_modules/sup-threejs-plugin`.
+
+The DOM plugin will be installed as any dependency in `sup-threejs-plugin/node_modules/sup-dom-plugin`, so you just need to move it two folders up.
+
 # Usage
 
 Typically, runtime objects have an `__inner` property set to their conterpart instance on the engine side which will reference the THREE objects they works with (`texture` for a Sprite asset, `threeMesh` for a SpriteRenderer, ...).  
@@ -61,23 +78,6 @@ For instance, the following code creates the two cubes and the sphere you can se
       }
     }
 
-
-## Installation
-
-This plugin depends on [the DOM plugin](https://github.com/florentpoujol/superpowers-dom-plugin), __so you need to install it too__.
-
-[Download the latest release](https://github.com/florentpoujol/superpowers-threejs-plugin/releases), unzip it, rename the folder to `threejs`, move it inside `app/plugins/florentpoujol/` then restart your server.
-
-__Advanced:__
-
-Get it via `npm`:
-
-    npm install sup-threejs-plugin
-
-The name of the vendors or plugins in the `app/plugins/` folder don't matter.  
-So you can leave the plugin path as `node_modules/sup-threejs-plugin`.
-
-The DOM plugin will be installed as any dependency in `sup-threejs-plugin/node_modules/sup-dom-plugin`, so you just need to move it two folders up.
 
 ## Test/Demo project
 
