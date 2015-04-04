@@ -1,3 +1,13 @@
+// THREE.js plugin
+// https://github.com/florentpoujol/superpowers-threejs-plugin
+// Exposes the definitions for THREE.js r70
+
+// Example of use with Superpowers:
+// https://github.com/florentpoujol/superpowers-threejs-plugin
+
+// Official THREE.js documentation:
+// http://threejs.org/docs
+
 // Type definitions for three.js r70
 // Project: http://mrdoob.github.com/three.js/
 // Definitions by: Kon <http://phyzkit.net/>, Satoru Kimura <https://github.com/gyohk>
