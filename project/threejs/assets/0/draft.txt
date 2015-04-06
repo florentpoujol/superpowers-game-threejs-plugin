@@ -1,6 +1,6 @@
 
 
-class MyBehavior extends Sup.Behavior {
+class MyBehavior extends Sup.Behavior 
   awake() {
     
     // add a cube to an actor
