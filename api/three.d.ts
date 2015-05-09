@@ -1,6 +1,6 @@
 // THREE.js plugin
 // https://github.com/florentpoujol/superpowers-threejs-plugin
-// Exposes the definitions for THREE.js r70
+// Exposes the definitions for THREE.js r71
 
 // Example of use with Superpowers:
 // https://github.com/florentpoujol/superpowers-threejs-plugin
@@ -1234,11 +1234,11 @@ declare module THREE {
         */
         getObjectByProperty( name: string, value: string ): Object3D;
         
-        getWorldPosition(optionalTarget: Vector3): Vector3;
-        getWorldQuaternion(optionalTarget: Quaternion): Quaternion;
-        getWorldRotation(optionalTarget: Euler): Euler;
-        getWorldScale(optionalTarget: Vector3): Vector3;
-        getWorldDirection(optionalTarget: Vector3): Vector3;
+        getWorldPosition(optionalTarget?: Vector3): Vector3;
+        getWorldQuaternion(optionalTarget?: Quaternion): Quaternion;
+        getWorldRotation(optionalTarget?: Euler): Euler;
+        getWorldScale(optionalTarget?: Vector3): Vector3;
+        getWorldDirection(optionalTarget?: Vector3): Vector3;
 
         /**
          * Translates object along arbitrary axis by distance.
@@ -4197,13 +4197,13 @@ declare module THREE {
     }
 
     export class SkinnedMesh extends Mesh {
-        constructor(geometry?: Geometry, material?: MeshBasicMaterial, useVertexTexture?: boolean);
-        constructor(geometry?: Geometry, material?: MeshDepthMaterial, useVertexTexture?: boolean);
-        constructor(geometry?: Geometry, material?: MeshFaceMaterial, useVertexTexture?: boolean);
-        constructor(geometry?: Geometry, material?: MeshLambertMaterial, useVertexTexture?: boolean);
-        constructor(geometry?: Geometry, material?: MeshNormalMaterial, useVertexTexture?: boolean);
-        constructor(geometry?: Geometry, material?: MeshPhongMaterial, useVertexTexture?: boolean);
-        constructor(geometry?: Geometry, material?: ShaderMaterial, useVertexTexture?: boolean);
+        constructor(geometry?: Geometry|BufferGeometry, material?: MeshBasicMaterial, useVertexTexture?: boolean);
+        constructor(geometry?: Geometry|BufferGeometry, material?: MeshDepthMaterial, useVertexTexture?: boolean);
+        constructor(geometry?: Geometry|BufferGeometry, material?: MeshFaceMaterial, useVertexTexture?: boolean);
+        constructor(geometry?: Geometry|BufferGeometry, material?: MeshLambertMaterial, useVertexTexture?: boolean);
+        constructor(geometry?: Geometry|BufferGeometry, material?: MeshNormalMaterial, useVertexTexture?: boolean);
+        constructor(geometry?: Geometry|BufferGeometry, material?: MeshPhongMaterial, useVertexTexture?: boolean);
+        constructor(geometry?: Geometry|BufferGeometry, material?: ShaderMaterial, useVertexTexture?: boolean);
 
         bindMode: string;
         bindMatrix: Matrix4;
@@ -4569,6 +4569,7 @@ declare module THREE {
         generateMipmaps: boolean;
         shareDepthFrom: any;
 
+        setSize(width: number, height: number): void;
         clone(): WebGLRenderTarget;
         dispose(): void;
 
