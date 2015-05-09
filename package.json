@@ -24,7 +24,7 @@
   "scripts": {
     "linksrcdev": "mklink /j \"../../app/plugins/florentpoujol/threejs\" \"./\"",
     "linksrcrelease": "mklink /j \"../../../release/app/plugins/florentpoujol/threejs\" \"./\"",
-    "linkprojdev": "mklink /j \"../../app/projects/threejs\" \"./project/threejs\"",
+    "linkprojdev": "mklink /j \"../../data/projects/threejs\" \"./project/threejs\"",
     "linkprojrelease": "mklink /j \"../../../localprojects/threejs\" \"./project/threejs\""
   },
   "maintainers": [
