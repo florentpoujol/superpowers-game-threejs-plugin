@@ -433,7 +433,6 @@ declare module THREE {
         constructor(data: any, itemSize: number);
     }
 
-    // since r71
     export class DynamicBufferAttribute extends BufferAttribute {
         constructor(array: any, itemSize: number); // array parameter should be TypedArray.
 
@@ -1218,20 +1217,17 @@ declare module THREE {
         getChildByName(name: string): Object3D;
 
         /**
-         * Searches through the object's children and returns the first with a matching id. Recursivity deprecated since r71.
+         * Searches through the object's children and returns the first with a matching id.
          * @param id  Unique number of the object instance
          */
         getObjectById(id: string): Object3D;
 
         /**
-         * Searches through the object's children and returns the first with a matching name. Recursivity deprecated since r71.
+         * Searches through the object's children and returns the first with a matching name.
          * @param name  String to match to the children's Object3d.name property.
          */
         getObjectByName(name: string): Object3D;
 
-        /**
-        * Recursivity deprecated since r71.
-        */
         getObjectByProperty( name: string, value: string ): Object3D;
         
         getWorldPosition(optionalTarget?: Vector3): Vector3;
