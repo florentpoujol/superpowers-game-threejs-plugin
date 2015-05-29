@@ -2,6 +2,8 @@
 SupRuntime.registerPlugin("threejs", require("./threejs"));
 
 },{"./threejs":2}],2:[function(require,module,exports){
+window.THREE = SupEngine.THREE;
+
 exports.init = function(player, callback) {
   window.SupWebGLRenderer = player.gameInstance.threeRenderer;
   window.SupThreeScene = player.gameInstance.threeScene;
