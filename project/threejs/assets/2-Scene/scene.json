@@ -15,9 +15,12 @@
               "y": 0,
               "width": 1,
               "height": 1
-            }
+            },
+            "depth": 0,
+            "nearClippingPlane": 0.1,
+            "farClippingPlane": 1000
           },
-          "id": 0
+          "id": "0"
         }
       ],
       "position": {
@@ -36,7 +39,9 @@
         "y": 1,
         "z": 1
       },
-      "id": 1
+      "id": "1",
+      "visible": true,
+      "layer": 0
     },
     {
       "name": "Sprite",
@@ -45,15 +50,22 @@
         {
           "type": "SpriteRenderer",
           "config": {
-            "spriteAssetId": 1,
-            "animationId": null
+            "spriteAssetId": "1",
+            "animationId": null,
+            "overrideOpacity": false,
+            "color": "ffffff",
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "materialType": "basic"
           },
-          "id": 0
+          "id": "0"
         }
       ],
       "position": {
-        "x": -3,
-        "y": 0,
+        "x": -3.2559902667999268,
+        "y": -0.022260040044784546,
         "z": 0
       },
       "orientation": {
@@ -67,7 +79,9 @@
         "y": 1,
         "z": 1
       },
-      "id": 2
+      "id": "2",
+      "visible": true,
+      "layer": 0
     },
     {
       "name": "Wireframe Cube",
@@ -76,9 +90,10 @@
         {
           "type": "Behavior",
           "config": {
-            "behaviorName": "MyBehavior"
+            "behaviorName": "MyBehavior",
+            "propertyValues": {}
           },
-          "id": 1
+          "id": "1"
         }
       ],
       "position": {
@@ -97,7 +112,9 @@
         "y": 1,
         "z": 1
       },
-      "id": 0
+      "id": "0",
+      "visible": true,
+      "layer": 0
     },
     {
       "name": "Textured Cube",
@@ -119,7 +136,9 @@
         "y": 1,
         "z": 1
       },
-      "id": 3
+      "id": "3",
+      "visible": true,
+      "layer": 0
     }
   ]
 }

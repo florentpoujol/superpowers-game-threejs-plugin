@@ -18,9 +18,9 @@ class MyBehavior extends Sup.Behavior {
     // create another cube and set the same texture as Sup's logo
   
     var tmpSprite: any = Sup.get("Sup Logo", Sup.Sprite);
-    
+
     var material = new THREE.MeshBasicMaterial( {
-      map: tmpSprite.__inner.texture,
+      map: tmpSprite.__inner.textures.map,
       //transparent: true,
       color: 0x96FF96, // 150,255,150
       //wireframe: true
