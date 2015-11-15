@@ -1,7 +1,7 @@
 {
   "name": "sup-threejs-plugin",
-  "version": "0.1.4",
-  "description": "Expose Three.js to the runtime of Superpowers, the extensible HTML5 2D+3D game engine.",
+  "version": "0.2.0",
+  "description": "Expose Three.js to the runtime of the Sup Game system for Superpowers, the extensible HTML5 2D+3D game engine.",
   "repository": {
     "type": "git",
     "url": "https://github.com/florentpoujol/superpowers-threejs-plugin"
@@ -21,10 +21,10 @@
     "url": "https://github.com/florentpoujol/superpowers-threejs-plugin/issues"
   },
   "scripts": {
-    "linksrcdev": "mklink /j \"../../app/plugins/florentpoujol/threejs\" \"./\"",
-    "linksrcrelease": "mklink /j \"../../../release/app/plugins/florentpoujol/threejs\" \"./\"",
-    "linkprojdev": "mklink /j \"../../data/projects/threejs\" \"./project/threejs\"",
-    "linkprojrelease": "mklink /j \"../../../localprojects/threejs\" \"./project/threejs\""
+    "linkplugindev": "mklink /j \"../../app/systems/supGame/plugins/florentpoujol/threejs\" \"./\"",
+    "linkprojectdev": "mklink /j \"../../data/projects/threejs\" \"./project/threejs\"",
+    "linkpluginrelease": "mklink /j \"../../../release/app/systems/supGame/plugins/florentpoujol/threejs\" \"./\"",
+    "linkprojectrelease": "mklink /j \"../../../release/data/threejs\" \"./project/threejs\""
   },
   "maintainers": [
     "Florent Poujol <florent.poujol@gmail.com>"

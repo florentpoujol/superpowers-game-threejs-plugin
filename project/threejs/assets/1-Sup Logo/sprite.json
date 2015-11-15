@@ -24,5 +24,6 @@
   },
   "maps": [
     "map"
-  ]
+  ],
+  "formatVersion": 1
 }

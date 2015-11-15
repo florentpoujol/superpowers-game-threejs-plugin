@@ -1,5 +1,7 @@
 {
   "name": "Threejs",
   "description": "",
-  "id": "EBpO"
+  "id": "EBpO",
+  "formatVersion": 2,
+  "system": "supGame"
 }
