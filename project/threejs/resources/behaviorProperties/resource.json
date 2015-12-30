@@ -2,6 +2,7 @@
   "behaviors": {
     "MyBehavior": {
       "scriptId": "0",
+      "line": 1,
       "parentBehavior": null,
       "properties": []
     }

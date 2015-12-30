@@ -1,5 +1,4 @@
 
-
 class MyBehavior extends Sup.Behavior {
   awake() {
     
@@ -46,7 +45,3 @@ class MyBehavior extends Sup.Behavior {
   }
 }
 Sup.registerBehavior(MyBehavior);
-
-
-Sup.loadScene( Sup.get("Scene", Sup.Scene));
-

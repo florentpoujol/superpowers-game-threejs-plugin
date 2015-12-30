@@ -1,6 +1,6 @@
 {
   "name": "sup-threejs-plugin",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Expose Three.js to the runtime of the Sup Game system for Superpowers, the extensible HTML5 2D+3D game engine.",
   "repository": {
     "type": "git",
@@ -8,7 +8,7 @@
   },
   "author": "Florent Poujol <florent.poujol@gmail.com> (http://florentpoujol.fr)",
   "dependencies": { 
-    "sup-dom-plugin": "0.x.x"
+    "sup-dom-plugin": "0.x.x"  
   },
   "keywords": [
     "superpowers",
