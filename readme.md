@@ -1,6 +1,6 @@
-# Superpowers THREE.js plugin
+# Superpowers Game THREE.js plugin
 
-This plugin exposes THREE.js r73 to the runtime of the `Sup Game` system for [Superpowers, the extensible HTML5 2D+3D game engine](http://sparklinlabs.com). 
+This plugin exposes THREE.js r73 to the runtime of the `Superpowers Game` system for [Superpowers, the extensible HTML5 2D+3D game engine](http://sparklinlabs.com). 
 
 ## Installation
 
@@ -32,13 +32,13 @@ You also have direct access to the `SupWebGLRenderer` and `SupThreeScene` variab
 
 For instance, the following code creates the two cubes and the sphere you can see in the image below:
 
-![blma](https://dl.dropboxusercontent.com/u/51314747/superpowers/threejs-plugin-demo.png)
+![threejs-plugin-demo.png](https://dl.dropboxusercontent.com/u/51314747/superpowers/threejs-plugin-demo.png)
 
     class MyBehavior extends Sup.Behavior {
       awake() {
         
         // add a cube to an actor
-        
+    
         var geometry = new THREE.BoxGeometry( 1, 1, 1 );
         var material = new THREE.MeshBasicMaterial( {color: 0xFF4784, wireframe: true} );
         var cube = new THREE.Mesh( geometry, material );
@@ -52,9 +52,9 @@ For instance, the following code creates the two cubes and the sphere you can se
         // create another cube and set the same texture as Sup's logo
       
         var tmpSprite: any = Sup.get("Sup Logo", Sup.Sprite);
-        
+
         var material = new THREE.MeshBasicMaterial( {
-          map: tmpSprite.__inner.texture,
+          map: tmpSprite.__inner.textures.map,
           //transparent: true,
           color: 0x96FF96, // 150,255,150
           //wireframe: true
@@ -66,9 +66,9 @@ For instance, the following code creates the two cubes and the sphere you can se
         tmpActor.__inner.threeObject.add( cube );
         tmpActor.__inner.threeObject.updateMatrixWorld();
         
-
+        
         // create a sphere and add it directly to Sup's scene.
-    
+        
         var sphereGeometry = new THREE.SphereGeometry( 1 );
         var material = new THREE.MeshBasicMaterial( {color: 0x479684, wireframe: true} );
         var sphere = new THREE.Mesh( sphereGeometry, material );
