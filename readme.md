@@ -1,24 +1,24 @@
 # Superpowers Game THREE.js plugin
 
-This plugin exposes THREE.js r73 to the runtime of the `Superpowers Game` system for [Superpowers, the extensible HTML5 2D+3D game engine](http://sparklinlabs.com). 
+This plugin exposes THREE.js r73 to the Typescript API of the `Superpowers Game` system for [Superpowers, the extensible HTML5 2D+3D game engine](http://superpowers-html5.com). 
 
 ## Installation
 
-This plugin depends on [the DOM plugin](https://github.com/florentpoujol/superpowers-dom-plugin), __so you need to install it too__.
+This plugin depends on [the DOM plugin](https://github.com/florentpoujol/superpowers-game-dom-plugin), __so you need to install it too__.
 
-[Download the latest release](https://github.com/florentpoujol/superpowers-threejs-plugin/releases), unzip it, rename the folder to `threejs`, move it inside `app/systems/supGame/plugins/florentpoujol/` then restart your server.
+[Download the latest release](https://github.com/florentpoujol/superpowers-game-threejs-plugin/releases), unzip it, rename the folder to `threejs`, move it inside `app/systems/supGame/plugins/florentpoujol/` then restart your server.
 
 __Advanced:__
 
 Get it via `npm`:
 
     cd app/systems/supGame/plugins
-    npm install sup-threejs-plugin
+    npm install superpowers-game-threejs-plugin
 
 The name of the vendors or plugins in the `app/systems/supGame/plugins/` folder don't matter.  
-So you can leave the plugin path as `node_modules/sup-threejs-plugin`.
+So you can leave the plugin path as `node_modules/superpowers-game-threejs-plugin`.
 
-The DOM plugin will be installed as any dependency in `sup-threejs-plugin/node_modules/sup-dom-plugin`, so you just need to move it two folders up.
+The DOM plugin will be installed as any dependency in `superpowers-game-threejs-plugin/node_modules/superpowers-game-dom-plugin`, so you just need to move it two folders up.
 
 # Usage
 

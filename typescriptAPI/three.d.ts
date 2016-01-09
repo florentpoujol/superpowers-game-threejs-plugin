@@ -1,9 +1,9 @@
 // THREE.js plugin
-// https://github.com/florentpoujol/superpowers-threejs-plugin
-// Exposes the definitions for THREE.js r73
+// https://github.com/florentpoujol/superpowers-game-threejs-plugin
+// Expose Three.js to the Typescript API of the Superpowers Game system
 
 // Example of use with Superpowers:
-// https://github.com/florentpoujol/superpowers-threejs-plugin
+// https://github.com/florentpoujol/superpowers-game-threejs-plugin
 
 // Official THREE.js documentation:
 // http://threejs.org/docs
@@ -14,11 +14,6 @@
 // Definitions: https://github.com/borisyankov/DefinitelyTyped  
 
 // Definitions for the Audio and AudioListener classes have been commented
-
-// Type definitions for three.js r73
-// Project: http://mrdoob.github.com/three.js/
-// Definitions by: Kon <http://phyzkit.net/>, Satoru Kimura <https://github.com/gyohk>
-// Definitions: https://github.com/borisyankov/DefinitelyTyped
 
 declare module THREE {
     export var REVISION: string;
