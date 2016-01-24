@@ -2,6 +2,6 @@
   "name": "Threejs",
   "description": "",
   "id": "EBpO",
-  "formatVersion": 3,
-  "system": "supGame"
+  "formatVersion": 5,
+  "systemId": "game"
 }

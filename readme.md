@@ -4,21 +4,23 @@ This plugin exposes THREE.js r73 to the Typescript API of the `Superpowers Game`
 
 ## Installation
 
-This plugin depends on [the DOM plugin](https://github.com/florentpoujol/superpowers-game-dom-plugin), __so you need to install it too__.
+__This plugin depends on [the DOM plugin](https://github.com/florentpoujol/superpowers-game-dom-plugin), so you need to install it too__.
 
-[Download the latest release](https://github.com/florentpoujol/superpowers-game-threejs-plugin/releases), unzip it, rename the folder to `threejs`, move it inside `app/systems/supGame/plugins/florentpoujol/` then restart your server.
+[Download the latest release](https://github.com/florentpoujol/superpowers-game-threejs-plugin/releases), unzip it, rename the folder to `threejs`, move it inside `app/systems/game/plugins/florentpoujol/` then restart your server.
 
 __Advanced:__
 
 Get it via `npm`:
 
-    cd app/systems/supGame/plugins
+    cd app/systems/game/plugins
     npm install superpowers-game-threejs-plugin
 
-The name of the vendors or plugins in the `app/systems/supGame/plugins/` folder don't matter.  
+The name of the vendors or plugins in the `app/systems/game/plugins/` folder don't matter.  
 So you can leave the plugin path as `node_modules/superpowers-game-threejs-plugin`.
 
-The DOM plugin will be installed as any dependency in `superpowers-game-threejs-plugin/node_modules/superpowers-game-dom-plugin`, so you just need to move it two folders up.
+Remember to also install the DOM plugin :
+
+    npm install superpowers-game-dom-plugin
 
 # Usage
 

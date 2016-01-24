@@ -1,15 +1,12 @@
 {
   "name": "superpowers-game-threejs-plugin",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Expose Three.js to the Typescript API of the Superpowers Game system for Superpowers, the extensible HTML5 2D+3D game engine.",
   "repository": {
     "type": "git",
     "url": "https://github.com/florentpoujol/superpowers-game-threejs-plugin"
   },
   "author": "Florent Poujol <florent.poujol@gmail.com> (http://florentpoujol.fr)",
-  "dependencies": { 
-    "sup-dom-plugin": "0.x.x"  
-  },
   "keywords": [
     "superpowers",
     "plugin",
@@ -25,7 +22,8 @@
     "linkprojectdev": "mklink /j \"../../data/projects/threejs\" \"./project/threejs\"",
     "linkpluginrelease": "mklink /j \"../../../release/app/systems/supGame/plugins/florentpoujol/threejs\" \"./\"",
     "linkprojectrelease": "mklink /j \"../../../release/data/threejs\" \"./project/threejs\"",
-    "build": "gulp --gulpfile=../../app/scripts/pluginGulpfile.js --cwd=."
+    "build": "gulp --gulpfile=../../app/scripts/pluginGulpfile.js --cwd=.",
+    "install": "echo The THREE.js plugin depends on the DOM plugin to work. You can get it from https://github.com/florentpoujol/superpowers-game-dom-plugin or via `npm install superpowers-game-dom-plugin`"
   },
   "maintainers": [
     "Florent Poujol <florent.poujol@gmail.com>"
