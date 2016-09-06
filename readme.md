@@ -1,30 +1,19 @@
 # Superpowers Game THREE.js plugin
 
-This plugin exposes THREE.js r73 to the Typescript API of the `Superpowers Game` system for [Superpowers, the extensible HTML5 2D+3D game engine](http://superpowers-html5.com). 
+This plugin exposes THREE.js r73 to the Typescript API of the `Game` system for [Superpowers, the extensible HTML5 2D+3D game engine](http://superpowers-html5.com).
+
 
 ## Installation
 
 __This plugin depends on [the DOM plugin](https://github.com/florentpoujol/superpowers-game-dom-plugin), so you need to install it too__.
 
-[Download the latest release](https://github.com/florentpoujol/superpowers-game-threejs-plugin/releases), unzip it, rename the folder to `threejs`, move it inside `app/systems/game/plugins/florentpoujol/` then restart your server.
-
-__Advanced:__
-
-Get it via `npm`:
-
-    cd app/systems/game/plugins
-    npm install superpowers-game-threejs-plugin
-
-The name of the vendors or plugins in the `app/systems/game/plugins/` folder don't matter.  
-So you can leave the plugin path as `node_modules/superpowers-game-threejs-plugin`.
-
-Remember to also install the DOM plugin :
-
-    npm install superpowers-game-dom-plugin
+- [Download the latest release](https://github.com/florentpoujol/superpowers-game-threejs-plugin/releases)
+- move the folder inside `app/systems/game/plugins/florentpoujol/`
+- restart your server
 
 # Usage
 
-Typically, runtime objects have an `__inner` property set to their conterpart instance on the engine side which will reference the THREE objects they works with (`texture` for a Sprite asset, `threeMesh` for a SpriteRenderer, ...).  
+Typically, runtime objects have an `__inner` property set to their conterpart instance on the engine side which will reference the THREE objects they works with (`texture` for a Sprite asset, `threeMesh` for a SpriteRenderer, ...).
 
 The `__inner` property is likely not exposed, so you have to store the objects in a temp variable of type `any` to access it.
 
@@ -38,21 +27,21 @@ For instance, the following code creates the two cubes and the sphere you can se
 
     class MyBehavior extends Sup.Behavior {
       awake() {
-        
+
         // add a cube to an actor
-    
+
         var geometry = new THREE.BoxGeometry( 1, 1, 1 );
         var material = new THREE.MeshBasicMaterial( {color: 0xFF4784, wireframe: true} );
         var cube = new THREE.Mesh( geometry, material );
-        
+
         var tmpActor: any = this.actor; // necessary to access __inner which isn't in the definitions
         tmpActor.__inner.threeObject.add( cube );
-        
+
         this.actor.setEulerAngles( new Sup.Math.Vector3(0,20,0) );
-        
-        
+
+
         // create another cube and set the same texture as Sup's logo
-      
+
         var tmpSprite: any = Sup.get("Sup Logo", Sup.Sprite);
 
         var material = new THREE.MeshBasicMaterial( {
@@ -63,19 +52,19 @@ For instance, the following code creates the two cubes and the sphere you can se
         } );
         var cube = new THREE.Mesh( geometry, material );
         cube.rotation.fromArray( [0,-20,0] );
-        
+
         var tmpActor: any = Sup.getActor("Textured Cube");
         tmpActor.__inner.threeObject.add( cube );
         tmpActor.__inner.threeObject.updateMatrixWorld();
-        
-        
+
+
         // create a sphere and add it directly to Sup's scene.
-        
+
         var sphereGeometry = new THREE.SphereGeometry( 1 );
         var material = new THREE.MeshBasicMaterial( {color: 0x479684, wireframe: true} );
         var sphere = new THREE.Mesh( sphereGeometry, material );
         sphere.position.set(0, 3, 0);
-        
+
         SupThreeScene.add( sphere );
         SupThreeScene.updateMatrixWorld(true);
       }
@@ -84,7 +73,7 @@ For instance, the following code creates the two cubes and the sphere you can se
 
 ## Test/Demo project
 
-The `project` folder contains a test/demo project.  
+The `project` folder contains a test/demo project.
 
 To install it, put the project's folder inside Superpowers' `projects` folder, then restart the server.
 

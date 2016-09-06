@@ -9,7 +9,7 @@ var threejs = {
     callback();
   }
 }
- 
+
 SupRuntime.registerPlugin("threejs", threejs);
 
 },{}]},{},[1]);
